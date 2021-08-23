@@ -585,7 +585,7 @@ button:hover {
         margin: 10px;
         padding: 10px;
         width: 16em;
-        height: 17.5em;
+        height: 20em;
     }
     .grid_2 {
         grid-template-columns: 1fr;
