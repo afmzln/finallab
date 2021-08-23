@@ -457,11 +457,11 @@ button:hover {
     }
     .bg_content {
         text-align: center;
-        height: 50%;
+        height: 80%;
         color: white;
         display: flex;
         font-size: large;
-        padding: 5em 1em;
+        padding: 10px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -581,8 +581,10 @@ button:hover {
         margin-bottom: 90em;
     }
     .services_content {
+        text-align: center;
+        margin: 10px;
         padding: 10px;
-        width: 18em;
+        width: 16em;
         height: 17.5em;
     }
     .grid_2 {
@@ -591,27 +593,26 @@ button:hover {
     .services_bg:first-child {
         position: absolute;
         top: -50px;
-        left: 75px;
-        right: 70px;
+        left: 5px;
+        right: 5px;
     }
     .services_bg:nth-child(2) {
         position: absolute;
         top: 305px;
-        left: 70px;
-        right: 75px;
+        left: 5px;
+        right: 10px;
     }
     .services_bg:nth-child(3) {
         position: absolute;
         top: 42em;
-        left: 70px;
-        right: 70px;
+        left: 5px;
+        right: 5px;
     }
     .services_bg:last-child {
         position: absolute;
-        position: absolute;
         top: 65em;
-        left: 70px;
-        right: 75px;
+        left: 5px;
+        right: 10px;
     }
 }
 
@@ -845,7 +846,7 @@ textarea.invalid {
     }
     input,
     textarea {
-        width: 300px;
+        width: 270px;
         border: 1px solid;
         padding: 10px;
     }
