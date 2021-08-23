@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="inner_navbar">
+                <a href="index.html"><img src="https://wfdesignbuild.com/img/wf_logo_dy.svg" alt="logo" width="50%" height="50%"></a>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="services.html">Services</a></li>
+                        <li> <a href="work.html">Work</a></li>
+                        <li><a href="project.html">Start your Project</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="nav_bars">
+                <i class='fas fa-bars fa-1x'></i>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="services_banner">
+        <div class="bg_overlay">
+            <div class="bg_content">
+                <h1>Always at your services</h1>
+                <p>From project exploration to design concepts to finishing touches, we handle every aspect of the home renovation process. With everything under one roof, we set an extremely high bar for quality and efficiency</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container services grid grid_2">
+        <div class="services_bg">
+            <div class="services_content">
+                <i class='fas fa-pencil-ruler fa-3x'></i>
+                <h2>Custom design + build</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vel soluta, provident consectetur veritatis tenetur nostrum atque deserunt, voluptas quod magnam architecto possimus praesentium velit. Esse recusandae provident natus
+                    voluptatum!
+                </p>
+            </div>
+        </div>
+        <div class="services_bg">
+            <div class="services_content">
+                <i class='fas fa-drafting-compass fa-3x'></i>
+                <h2>Architecture + engineering</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vel soluta, provident consectetur veritatis tenetur nostrum atque deserunt, voluptas quod magnam architecto possimus praesentium velit. Esse recusandae provident natus
+                    voluptatum!
+                </p>
+            </div>
+        </div>
+        <div class="services_bg">
+            <div class="services_content">
+                <i class='fas fa-ruler-combined fa-3x'></i>
+                <h2>Interior + exterior design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vel soluta, provident consectetur veritatis tenetur nostrum atque deserunt, voluptas quod magnam architecto possimus praesentium velit. Esse recusandae provident natus
+                    voluptatum!
+                </p>
+            </div>
+        </div>
+        <div class="services_bg">
+            <div class="services_content">
+                <i class='fas fa-hard-hat fa-3x'></i>
+                <h2>Project management</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vel soluta, provident consectetur veritatis tenetur nostrum atque deserunt, voluptas quod magnam architecto possimus praesentium velit. Esse recusandae provident natus
+                    voluptatum!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" container services_bottom">
+        <div class="bottom_content grid grid_2">
+            <div class="bg_img"></div>
+            <!-- <img src="https://images.pexels.com/photos/313691/pexels-photo-313691.jpeg" alt="home" width="600" height="400"> -->
+            <div class="bottom_mg">
+                <h2>If you're eager to start a new home renovation project, we're experienced, established, an ready to get to work</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque illum libero aut quia. Voluptatem culpa fugiat consequatur exercitationem repellendus officiis, quos velit quae labore quam ipsum tempora maxime rem?</p>
+                <!-- <button onclick="visitPage();"> Let's work together </button> -->
+                <button id="sv_btn"> Let's work together</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var nav = document.querySelector("#nav_bars");
+        var menu = document.querySelector(".menu");
+
+        nav.addEventListener("click", function() {
+            menu.classList.toggle("active");
+        })
+
+        document.querySelector("#sv_btn").addEventListener("click", () => {
+            window.location = "project.html";
+        });
+    </script>
+
+
+    <footer class="footer">
+
+        <p> <span>&copy;</span>WD Build.</p>
+
+    </footer>
+</body>
+
+
+
+</html>
