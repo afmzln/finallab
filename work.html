@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="inner_navbar">
+                <a href="index.html"><img src="https://wfdesignbuild.com/img/wf_logo_dy.svg" alt="logo" width="50%" height="50%"></a>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="services.html">Services</a></li>
+                        <li> <a href="work.html">Work</a></li>
+                        <li><a href="project.html">Start your Project</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="nav_bars">
+                <i class='fas fa-bars fa-1x'></i>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container renovations">
+        <div class="renovations_top">
+            <h1>Funtionally beautiful home renovations additions</h1>
+            <p>Expertly rafted with meticulous are and attention to detail</p>
+        </div>
+    </div>
+
+    <div class="container works">
+        <div class="grid grid_3">
+            <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/4078617/pexels-photo-4078617.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/3637739/pexels-photo-3637739.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/1046639/pexels-photo-1046639.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/2736139/pexels-photo-2736139.jpeg" alt="work" width="100%" height="100%">
+            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="work" width="100%" height="100%">
+        </div>
+    </div>
+
+
+    <div class=" container services_bottom">
+        <div class="bottom_content grid grid_2">
+            <div class="bg_img"></div>
+            <!-- <img src="https://images.pexels.com/photos/313691/pexels-photo-313691.jpeg" alt="home" width="600" height="400"> -->
+            <div class="bottom_mg">
+                <h2>If you're eager to start a new home renovation project, we're experienced, established, an ready to get to work</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque illum libero aut quia. Voluptatem culpa fugiat consequatur exercitationem repellendus officiis, quos velit quae labore quam ipsum tempora maxime rem?</p>
+                <!-- <button onclick="visitPage();"> Let's work together </button> -->
+                <button id="sv_btn"> Let's work together</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var nav = document.querySelector("#nav_bars");
+        var menu = document.querySelector(".menu");
+
+        nav.addEventListener("click", function() {
+            menu.classList.toggle("active");
+        })
+
+        document.querySelector("#sv_btn").addEventListener("click", () => {
+            window.location = "project.html";
+        });
+    </script>
+
+    <footer class="footer">
+
+        <p> <span>&copy;</span>WD Build.</p>
+
+    </footer>
+</body>
+
+
+</html>
