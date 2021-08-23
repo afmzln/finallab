@@ -69,7 +69,7 @@ header {
         display: none;
     }
     /*****PHONE HEADER*****/
-    @media (max-width: 500px) {
+    @media (max-width: 480px) {
         header {
             margin-bottom: -1em;
         }
@@ -254,7 +254,7 @@ button:hover {
 
 /****PHONE BANNER***/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -297,7 +297,7 @@ button:hover {
 
 /****PHONE VISION ***/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -378,7 +378,7 @@ button:hover {
 
 /****PHONE PLANNER***/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -450,7 +450,7 @@ button:hover {
 
 /****PHONE SERVICES***/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -571,7 +571,7 @@ button:hover {
 
 /*PHONE*/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -676,7 +676,7 @@ button:hover {
 
 /*PHONE*/
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -740,7 +740,7 @@ button:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .renovations_top {
         text-align: center;
         font-size: larger;
@@ -830,7 +830,7 @@ textarea.invalid {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .project {
         margin-top: 5%;
         margin-left: 10%;
