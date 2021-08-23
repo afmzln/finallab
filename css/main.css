@@ -846,7 +846,7 @@ textarea.invalid {
     }
     input,
     textarea {
-        width: 280px;
+        width: 270px;
         border: 1px solid;
         padding: 10px;
     }
