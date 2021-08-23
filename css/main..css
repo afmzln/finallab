@@ -1,0 +1,862 @@
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+.justify {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/*-----------------------------------------------------HOMEPAGE-----------------------------*/
+
+.navbar {
+    height: 60px;
+    padding: 0 25px;
+}
+
+.navbar .inner_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .menu ul li a {
+    width: 100%;
+    margin-right: 30px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+}
+
+.navbar .menu ul li:last-child a {
+    margin-right: 0;
+}
+
+.navbar .menu ul li a:hover,
+.navbar .menu ul li a.active {
+    background: #CDAC81;
+    color: white;
+    padding: 15px;
+}
+
+
+/************************** PHONE,PC, TABLET MEDIAAAAA HEADER ***************************/
+
+@media only screen and (max-width: 1400px) {
+    .navbar #nav_bars {
+        display: none;
+    }
+    /*****PHONE HEADER*****/
+    @media (max-width: 500px) {
+        header {
+            margin-bottom: -1em;
+        }
+        .navbar {
+            height: 60px;
+            padding: 10px;
+        }
+        .navbar .inner_navbar {
+            flex-direction: row;
+        }
+        .navbar .menu ul {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            display: block;
+            background: #CDAC81;
+            width: 100%;
+            z-index: 99;
+        }
+        .navbar .menu ul li {
+            padding: 10px;
+        }
+        .navbar .menu ul li a {
+            width: 75%;
+            padding: 10px;
+            color: white
+        }
+        .navbar #nav_bars {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 1em;
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .navbar .menu {
+            display: none;
+        }
+        .navbar .menu.active {
+            display: block;
+        }
+    }
+}
+
+
+/*****TABLET HEADER*****/
+
+@media only screen and (max-width: 1400px) {
+    .nav #nav_bars {
+        display: none;
+    }
+    @media (min-width: 600px) and (max-width: 900px) {
+        .navbar {
+            height: 40px;
+            padding: 10px;
+        }
+        .navbar .inner_navbar {
+            flex-direction: row;
+        }
+        .navbar .menu ul {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            display: block;
+            background: #090f1b;
+            width: 100%;
+            z-index: 99;
+        }
+        .navbar .menu ul li {
+            padding: 10px;
+        }
+        .navbar .menu ul li a {
+            width: 80%;
+            padding: 10px;
+            color: white
+        }
+        .navbar #nav_bars {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 1em;
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .navbar .menu {
+            display: none;
+        }
+        .navbar .menu.active {
+            display: block;
+        }
+    }
+}
+
+
+/**BANNER HOMEPAGE**/
+
+#banner {
+    background-image: url("https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner_content {
+    text-align: center;
+    height: 52%;
+    color: bisque;
+    display: flex;
+    font-size: x-large;
+    padding: 5em 10em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner_content h4 {
+    margin-top: 0;
+}
+
+.banner_content h1 {
+    margin-bottom: 10px;
+}
+
+.bg_overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+button {
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid #b6b6b6;
+    background-color: #865439;
+}
+
+button:hover {
+    background-color: #C68B59;
+}
+
+
+/**************************MEDIAAAAA BANNER HOMEPAGE***************************/
+
+
+/****TABLET BANNER***/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .banner_content {
+        text-align: center;
+        height: 40%;
+        color: white;
+        display: flex;
+        font-size: large;
+        padding: 5em 1em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    button {
+        padding: 12px;
+        width: 50%;
+        border-radius: 10px;
+        border: 1px solid #b6b6b6;
+        background-color: #865439;
+    }
+}
+
+
+/****PHONE BANNER***/
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .banner_content {
+        text-align: center;
+        height: 60%;
+        color: white;
+        display: flex;
+        font-size: large;
+        padding: 5em 1em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    button {
+        padding: 12px;
+        width: 50%;
+        border-radius: 10px;
+        border: 1px solid #b6b6b6;
+        background-color: #865439;
+    }
+}
+
+
+/*** VISION HOMEPAGE*/
+
+.vision {
+    margin: 30px 0px;
+}
+
+.vision_content {
+    text-align: center;
+    font-size: large;
+}
+
+
+/**************************VISION MEDIA ***************************/
+
+
+/****PHONE VISION ***/
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .vision_content {
+        text-align: center;
+        font-size: large;
+    }
+}
+
+
+/***PLANNER HOMEPAGE*********/
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.planner {
+    margin-bottom: 5em;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid_3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.plan {
+    border-radius: 10px;
+    border: 1px solid #b6b6b6;
+    position: relative;
+    background-color: white;
+}
+
+.plan_content {
+    padding: 1em;
+    text-align: center;
+}
+
+.plan_banner:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url("https://images.pexels.com/photos/212286/pexels-photo-212286.jpeg");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plan:nth-child(2) .plan_banner {
+    background-image: url("https://images.pexels.com/photos/6224/hands-people-woman-working.jpg");
+}
+
+.plan:last-child .plan_banner {
+    background-image: url("https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg");
+}
+
+
+/**************************PLANNER MEDIA ***************************/
+
+
+/****TABLET PLANNER***/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .grid_3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/****PHONE PLANNER***/
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .grid_3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/**--------------------------------------------------  SERVICE PAGE -----------------------------------------------------**/
+
+
+/**SERVICES BANNER**/
+
+.services_banner {
+    background-image: url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg_content {
+    text-align: center;
+    height: 10%;
+    color: white;
+    display: flex;
+    font-size: x-large;
+    padding: 10em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services_banner p {
+    margin-top: 0;
+}
+
+.services_banner h1 {
+    margin-bottom: 10px;
+}
+
+
+/**************************SERVICE MEDIA ***************************/
+
+
+/****TABLET SERVICES***/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bg_content {
+        text-align: center;
+        height: 50%;
+        color: white;
+        display: flex;
+        font-size: large;
+        padding: 5em 1em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/****PHONE SERVICES***/
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bg_content {
+        text-align: center;
+        height: 50%;
+        color: white;
+        display: flex;
+        font-size: large;
+        padding: 5em 1em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/**SERVIES MIDDLE **/
+
+.services {
+    position: relative;
+    margin-bottom: 45em;
+}
+
+.services_bg {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #b6b6b6;
+}
+
+.services_bg:first-child {
+    position: absolute;
+    top: -50px;
+    right: 50%;
+    margin-right: 10px;
+    z-index: 99;
+}
+
+.services_bg:nth-child(2) {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    z-index: 99;
+}
+
+.services_bg:nth-child(3) {
+    position: absolute;
+    top: 20em;
+    right: 50%;
+    margin-right: 10px;
+}
+
+.services_bg:last-child {
+    position: absolute;
+    top: 20em;
+    left: 50%;
+}
+
+.grid_2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.services_content {
+    padding: 30px;
+    width: 17.5em;
+    height: 17.5em;
+}
+
+
+/**************************SERVICE MEDIA ***************************/
+
+
+/*TABLET*/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .services {
+        position: relative;
+        margin-bottom: 90em;
+    }
+    .services_content {
+        text-align: center;
+        padding: 20px;
+        width: 23em;
+        height: 17.5em;
+    }
+    .grid_2 {
+        grid-template-columns: 1fr;
+    }
+    .services_bg:first-child {
+        position: absolute;
+        top: -50px;
+        left: 75px;
+        right: 70px;
+    }
+    .services_bg:nth-child(2) {
+        position: absolute;
+        top: 305px;
+        left: 70px;
+        right: 75px;
+    }
+    .services_bg:nth-child(3) {
+        position: absolute;
+        top: 42em;
+        left: 70px;
+        right: 70px;
+    }
+    .services_bg:last-child {
+        position: absolute;
+        position: absolute;
+        top: 65em;
+        left: 70px;
+        right: 75px;
+    }
+}
+
+
+/*PHONE*/
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .services {
+        position: relative;
+        margin-bottom: 90em;
+    }
+    .services_content {
+        text-align: center;
+        padding: 20px;
+        width: 20em;
+        height: 17.5em;
+    }
+    .grid_2 {
+        grid-template-columns: 1fr;
+    }
+    .services_bg:first-child {
+        position: absolute;
+        top: -50px;
+        left: 5%;
+        right: 5%;
+    }
+    .services_bg:nth-child(2) {
+        position: absolute;
+        top: 305px;
+        left: 5%;
+        right: 8%;
+    }
+    .services_bg:nth-child(3) {
+        position: absolute;
+        top: 42em;
+        left: 5%;
+        right: 5%;
+    }
+    .services_bg:last-child {
+        position: absolute;
+        position: absolute;
+        top: 65em;
+        left: 5%;
+        right: 8%;
+    }
+}
+
+
+/** SERVICES BOTTOM **/
+
+.services_bottom {
+    margin-bottom: 3em;
+}
+
+.bg_img {
+    background-image: url("https://images.pexels.com/photos/4219527/pexels-photo-4219527.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom_mg {
+    padding: 10px;
+    width: 90%;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottom_mg button {
+    padding: 20px;
+    width: 80%;
+}
+
+
+/**************************SERVICE BOTTOM MEDIA ***************************/
+
+
+/*TABLET*/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bg_img {
+        background-image: url("https://images.pexels.com/photos/4219527/pexels-photo-4219527.jpeg");
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid_2 {
+        grid-template-columns: 1fr;
+    }
+    .bottom_mg {
+        padding: 20px;
+    }
+}
+
+
+/*PHONE*/
+
+@media (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bg_img {
+        background-image: url("https://images.pexels.com/photos/4219527/pexels-photo-4219527.jpeg");
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid_2 {
+        grid-template-columns: 1fr;
+    }
+    .bottom_mg {
+        padding: 20px;
+    }
+}
+
+
+/*----------------------------------WORK PAGE------------------------------------*/
+
+
+/**RENOVATIONS**/
+
+.renovations_top {
+    height: 70%;
+    color: black;
+    display: flex;
+    font-size: large;
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.works {
+    margin-bottom: 5em;
+}
+
+
+/**************************RENOVATION BANNER ***************************/
+
+
+/*TABLET*/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .renovations_top {
+        text-align: center;
+        font-size: larger;
+    }
+    .bg_img {
+        background-image: url("https://images.pexels.com/photos/4219527/pexels-photo-4219527.jpeg");
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grid_2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .renovations_top {
+        text-align: center;
+        font-size: larger;
+    }
+}
+
+
+/**PROJECT PAGE**/
+
+.project {
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.pj {
+    text-align: center;
+    font-size: larger;
+}
+
+.submit {
+    margin: 10% 30%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+}
+
+input.invalid {
+    border: 1px solid red;
+}
+
+textarea.invalid {
+    border: 1px solid red;
+}
+
+.error-hint {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.thank {
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+/**************************PROJECT BANNER ***************************/
+
+
+/*TABLET*/
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .project {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pj {
+        text-align: center;
+        font-size: small;
+        margin-top: 2em;
+    }
+    .submit {
+        margin: 5% 25%;
+    }
+    input,
+    textarea {
+        width: 500px;
+        border: 1px solid;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pj {
+        text-align: center;
+        font-size: small;
+        margin-top: 2em;
+    }
+    .submit {
+        margin: 5% 25%;
+    }
+    input,
+    textarea {
+        width: 300px;
+        border: 1px solid;
+        padding: 10px;
+    }
+}
+
+.footer {
+    background-color: #CDAC81;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    font-family: sans-serif;
+    font-size: small;
+}
