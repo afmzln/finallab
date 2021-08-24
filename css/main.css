@@ -105,7 +105,7 @@ header {
             font-size: 24px;
             color: black;
             cursor: pointer;
-            transition: all 0.2s ease;
+            transition: all 0.4s ease;
         }
         .navbar .menu {
             display: none;
