@@ -317,10 +317,9 @@ button:hover {
 
 /***--------------------------PLANNER HOMEPAGE-------------------------------*********/
 
-
-/* .planner {
-    width: 90%;
-} */
+.planner {
+    margin-bottom: 50px;
+}
 
 .grid {
     display: grid;
