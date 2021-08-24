@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
+
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <div class="navbar">
             <div class="inner_navbar">
                 <a href="index.html"><img src="https://wfdesignbuild.com/img/wf_logo_dy.svg" alt="logo" width="50%" height="50%"></a>
@@ -25,13 +25,13 @@
                 </div>
             </div>
 
-            <div id="nav_bars">
+            <div id="bars">
                 <i class='fas fa-bars fa-1x'></i>
             </div>
         </div>
+
     </header>
-
-
+    <!-------- BANNER CONTAINER------------>
     <div id="banner">
         <div class="bg_overlay">
             <div class="banner_content">
@@ -41,15 +41,19 @@
             </div>
         </div>
     </div>
-    <div class="vision">
+
+    <!---------------------------------VISION CONTAINER----------------------------------------->
+
+    <div class="vision  container">
         <div class="vision_content">
             <h1>Vision.Clarity.Results</h1>
             <p>Our client relationship are built on trust, collaboration, and transparency, with your ideas and our guidance and resources, the possibilities are endless</p>
         </div>
     </div>
 
+    <!---------------------------------PLANNER CONTAINER----------------------------------------->
 
-    <div class="planner ">
+    <div class="planner container">
         <div class="grid grid_3">
             <div class="plan">
                 <div class="plan_banner"></div>
@@ -76,9 +80,8 @@
 
     </div>
 
-    <!-- <script src="js/main.js"></script> -->
     <script>
-        var nav = document.querySelector("#nav_bars");
+        var nav = document.querySelector("#bars");
         var menu = document.querySelector(".menu");
 
         nav.addEventListener("click", function() {
@@ -91,11 +94,8 @@
         });
     </script>
 
-    <footer class="footer">
 
-        <p> <span>&copy;</span>WD Build.</p>
 
-    </footer>
 </body>
 
 
