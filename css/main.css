@@ -308,10 +308,10 @@ button:hover {
 /****PHONE VISION ***/
 
 @media (max-width: 480px) {
-    /* .container {
+    .container {
         margin-left: 5%;
         margin-right: 5%;
-    } */
+    }
     .vision_content {
         text-align: center;
         font-size: 15px;
@@ -320,6 +320,11 @@ button:hover {
 
 
 /***PLANNER HOMEPAGE*********/
+
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .planner {
     margin-bottom: 5em;
