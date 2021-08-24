@@ -113,6 +113,12 @@ header {
         .navbar .menu.active {
             display: block;
         }
+        .navbar .menu ul li a:hover,
+        .navbar .menu ul li a.active {
+            background: #CDAC81;
+            color: white;
+            padding: 15px;
+        }
     }
 }
 
