@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    overflow: hidden;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
 }
 
 .flex {
