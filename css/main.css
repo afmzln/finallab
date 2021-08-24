@@ -621,7 +621,7 @@ button:hover {
 /** SERVICES BOTTOM **/
 
 .services_bottom {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .bg_img {
@@ -750,6 +750,10 @@ button:hover {
 
 /**----------------------------------PROJECT PAGE----------------------------------**/
 
+.project {
+    margin-bottom: 40px;
+}
+
 .pj {
     text-align: center;
     font-size: larger;
@@ -795,6 +799,10 @@ textarea.invalid {
     padding: 40px;
     font-size: 32px;
     text-align: center;
+}
+
+.submit {
+    margin: 0 35%;
 }
 
 
