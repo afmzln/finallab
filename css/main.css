@@ -4,7 +4,6 @@ body {
     /* Hide horizontal scrollbar */
     overflow-y: scroll;
     /* Add vertical scrollbar */
-    width: 80%;
 }
 
 .flex {
