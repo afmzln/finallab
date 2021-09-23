@@ -664,7 +664,7 @@ button:hover {
         grid-template-columns: 1fr;
     }
     .bottom_mg {
-        padding: 20px;
+        padding: 35px;
         font-size: large;
     }
 }
