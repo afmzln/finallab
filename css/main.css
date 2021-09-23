@@ -587,26 +587,26 @@ button:hover {
     .services_bg:first-child {
         position: absolute;
         top: -50px;
-        left: 5px;
-        right: 5px;
+        left: 20px;
+        right: 15px;
     }
     .services_bg:nth-child(2) {
         position: absolute;
         top: 305px;
-        left: 5px;
-        right: 10px;
+        left: 20px;
+        right: 22px;
     }
     .services_bg:nth-child(3) {
         position: absolute;
         top: 42em;
-        left: 5px;
-        right: 5px;
+        left: 20px;
+        right: 22px;
     }
     .services_bg:last-child {
         position: absolute;
         top: 65em;
-        left: 5px;
-        right: 10px;
+        left: 20px;
+        right: 23px;
     }
 }
 
