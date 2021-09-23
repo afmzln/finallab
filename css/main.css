@@ -835,8 +835,8 @@ textarea.invalid {
 @media (max-width: 480px) {
     .project {
         margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 3.9%;
+        margin-right: 3.9%;
     }
     .pj {
         text-align: center;
@@ -848,7 +848,7 @@ textarea.invalid {
     }
     input,
     textarea {
-        width: 300px;
+        width: 269px;
         border: 1px solid;
         padding: 10px;
     }
