@@ -525,7 +525,7 @@ button:hover {
 @media (min-width: 600px) and (max-width: 900px) {
     .services {
         position: relative;
-        margin-bottom: 90em;
+        margin-bottom: 78em;
     }
     .services_content {
         text-align: center;
