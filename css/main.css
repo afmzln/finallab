@@ -192,7 +192,7 @@ body {
 .banner_content {
     text-align: center;
     height: 52%;
-    color: bisque;
+    color: rgb(255, 255, 255);
     display: flex;
     font-size: x-large;
     padding: 5em 10em;
