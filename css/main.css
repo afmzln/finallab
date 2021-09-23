@@ -544,20 +544,20 @@ button:hover {
     }
     .services_bg:nth-child(2) {
         position: absolute;
-        top: 305px;
+        top: 250px;
         left: 70px;
         right: 98px;
     }
     .services_bg:nth-child(3) {
         position: absolute;
-        top: 42em;
+        top: 34.5em;
         left: 70px;
         right: 90px;
     }
     .services_bg:last-child {
         position: absolute;
         position: absolute;
-        top: 65em;
+        top: 54.5em;
         left: 70px;
         right: 98px;
     }
